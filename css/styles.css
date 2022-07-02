@@ -240,7 +240,46 @@ p {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+.cards p {
+    margin-bottom: 16px;
+}
+.icons-list {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
 
+.cards-icon {
+    fill: #AFB1B8;
+}
+.cards-link-icon {
+    display: inline-block;
+    text-align: center;
+    padding-top: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-accent-color)
+}
+.cards-link-icon:hover,
+.cards-link-icon:focus {
+    background-color: var(--accent-color)
+}
+.shadow {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+.cards-link-icon:hover .cards-icon {
+    fill: var(--secondary-accent-color)
+}
+/* відступи між іконками картки */
+.icons-list li {
+    margin-right: 10px;
+}
+
+.icons-list li:last-child {
+    margin-right: 0px;
+}
 /* Footer */
 .logo .studio {
     color: var(--secondary-accent-color);
