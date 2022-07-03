@@ -116,15 +116,7 @@ p {
 .header-icons {
     fill: var(--secondary-text-color);
  }
- /* задання розмірів іконкам */
-.header-icons.tel {
-    width: 10px;
-    height: 16px;
-}
-.header-icons.mail {
-    width: 16px;
-    height: 12px;
-}
+ 
 /* задання кольору при ховері і фокусі іконки */
 .link:hover .header-icons,
 .link:focus .header-icons {
