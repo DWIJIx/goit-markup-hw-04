@@ -3,6 +3,8 @@
     --accent-color: #2196F3;
     --secondary-text-color: #757575;
     --secondary-accent-color: #FFF;
+    --primary-bg-color: #ffff;
+    --secondary-bg-color: #f5f4fa;
 }
 .list {
     padding: 0px;
@@ -116,12 +118,12 @@ p {
  }
  /* задання розмірів іконкам */
 .header-icons.tel {
-    width: 16px;
-    height: 24px;
+    width: 10px;
+    height: 16px;
 }
 .header-icons.mail {
     width: 16px;
-    height: 17px;
+    height: 12px;
 }
 /* задання кольору при ховері і фокусі іконки */
 .link:hover .header-icons,
@@ -198,10 +200,10 @@ p {
     padding-bottom: 94px;
       }
 .main-section {
-    background-color: #FFF;
+    background-color: var(--primary-bg-color);
 }
 .main-ourteam {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bg-color);
 }
 .main-section h2,
 .main-ourteam h2 {
@@ -223,6 +225,18 @@ p {
 
  .main-section-li h3{
     margin-bottom: 10px;
+    
+}
+/* іконки над текстом */
+.main-section-li > div {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 .main-section h3 {
     font-weight: 700;
@@ -280,12 +294,15 @@ p {
 .cards-link-icon:focus {
     background-color: var(--accent-color)
 }
+
+.cards-link-icon:hover .cards-icon,
+.cards-link-icon:focus .cards-icon {
+    fill: var(--secondary-accent-color)
+}
+
 .shadow {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-}
-.cards-link-icon:hover .cards-icon {
-    fill: var(--secondary-accent-color)
+    border-radius: 0px 0px 4px 4px;
 }
 /* відступи між іконками картки */
 .icons-list li {
@@ -295,6 +312,40 @@ p {
 .icons-list li:last-child {
     margin-right: 0px;
 }
+
+.clients {
+    display: flex;
+    justify-content: center;
+    
+}
+.clients-li a{  
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    background-color: var(--primary-bg-color);
+}
+.clients li {
+    margin-right: 30px;
+}
+.clients li:last-child {
+    margin-right: 0px;
+}
+.logo-icon {
+    fill: rgba(175, 177, 184, 1);
+}
+.clients-li a:hover .logo-icon,
+.clients-li a:focus .logo-icon {
+    fill: var(--accent-color)
+}
+.clients-li a:hover, 
+.clients-li a:focus  {
+    border: solid 1px var(--accent-color);
+}
+
 /* Footer */
 .logo .studio {
     color: var(--secondary-accent-color);
